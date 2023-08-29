@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="calculatorbody">
+           <div class="inputdiv">
+            <input type="text"  id="Inputwar" >
+           </div>
+           <div class="tableone">
+            <table>
+                <tbody>
+                        <td><input type="button"  value="c" id="clear" onclick="Delete()"  ></td>
+                        <td><input type="button" ondblclick="calculator('(')" value="("></td>
+                        <td><input type="button" ondblclick="calculator(')')" value=")"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><input type="button" ondblclick="calculator('9')" value="9"></td>
+                        <td><input type="button" ondblclick="calculator('8')" value="8"></td>
+                        <td><input type="button" ondblclick="calculator('7')" value="7"></td>
+                        <td><input type="button" ondblclick="calculator('+')" value="+"></td>
+                    </tr>
+                    <tr>
+        
+                        <td><input type="button" ondblclick="calculator('6')" value="6"></td>
+                        <td><input type="button" ondblclick="calculator('5')" value="5"></td>
+                        <td><input type="button" ondblclick="calculator('4')" value="4"></td>
+                        <td><input type="button" ondblclick="calculator('-')" value="-"></td>
+                    </tr>
+                   <tr>
+                <td><input type="button" ondblclick="calculator('3')" value="3"></td>
+                <td><input type="button" ondblclick="calculator('2')" value="2"></td>
+                <td><input type="button" ondblclick="calculator('1')" value="1"></td>
+                <td><input type="button" ondblclick="calculator('*')" value="*"></td>
+                </tr>
+        
+                <tr>
+                    <td><input type="button" ondblclick="calculator('0')" value="0"></td>
+                    <td><input type="button" ondblclick="calculator('.')" value="."></td>
+                    <td><input type="button" ondblclick="calculator('/')" value="/"></td>
+                    <td><input type="button" onclick="Coller()"  value="=" id="reset"></td>
+                </tr>
+                </tbody>
+            
+                
+    
+    
+               </table>
+           </div>
+
+ 
+
+      </div>
+
+  <script>
+
+     const Inputwar = document.querySelector("#Inputwar");
+     const Reset = document.querySelector("#reset").value
+
+
+       function Delete(){
+          Inputwar.value="";
+       }
+       function calculator(pera){
+            Inputwar.value += pera
+       }
+      function Coller(){
+        var a= document.querySelector("#Inputwar").value;
+        var b = eval(a);
+        document.querySelector("#Inputwar").value=b
+      }
+
+       
+
+
+          
+
+
+  </script>
+</body>
+</html>

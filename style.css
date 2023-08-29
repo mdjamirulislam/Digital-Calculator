@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+   
+
+    
+}
+
+.calculatorbody{
+    width: 302px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-color: black;
+    
+    
+}
+.tableone input{
+    width: 72px;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    outline: none;
+    border:none;
+    display: inline-block;
+    align-items: flex-start;
+
+
+}
+.tableone input:hover{
+    background: #1199DD;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+.tableone{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calculatorbody table {
+    width: 10px;
+}
+.inputdiv{
+    width: 302px;
+    display: inline-block;
+    
+  
+}
+.inputdiv input{
+    padding: 25px 5px;
+    outline: none;
+    font-size: 25px;
+   text-align: right;
+   display: inline-block;
+
+
+}
+
+
+
+
